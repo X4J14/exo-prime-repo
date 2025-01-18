@@ -1,0 +1,62 @@
+(exo
+  (:export :extern
+    #:parse-string
+    #:create-scanner
+    #:create-optimized-test-function
+    #:parse-tree-synonym
+    #:define-parse-tree-synonym
+    #:scan
+    #:scan-to-strings
+    #:do-scans
+    #:do-matches
+    #:do-matches-as-strings
+    #:count-matches
+    #:all-matches
+    #:all-matches-as-strings
+    #:split
+    #:regex-replace
+    #:regex-replace-all
+    #:regex-apropos
+    #:regex-apropos-list
+    #:quote-meta-chars
+    #:*regex-char-code-limit*
+    #:*use-bmh-matchers*
+    #:*allow-quoting*
+    #:*allow-named-registers*
+    #:*optimize-char-classes*
+    #:*property-resolver*
+    #:*look-ahead-for-suffix*
+    #:ppcre-error
+    #:ppcre-invocation-error
+    #:ppcre-syntax-error
+    #:ppcre-syntax-error-string
+    #:ppcre-syntax-error-pos
+    #:register-groups-bind
+    #:do-register-groups
+    #:signal-syntax-error
+    ;; for tests
+    #:string-list-to-simple-string
+    #:*standard-optimize-settings*
+    #:*string*
+    #:*end-pos*
+    #:with-rebinding)
+  (:bundle
+    #:specials
+    #:util
+    #:errors
+    #:charset
+    #:charmap
+    #:chartest
+    ;; We can add #-:use-acl-regexp2-engine here for each below
+    #:lexer
+    #:parser
+    #:regex-class
+    #:regex-class-util
+    #:convert
+    #:optimize
+    #:closures
+    #:repetition-closures
+    #:scanner
+    ;; end acl
+    #:api
+    #:resolver))

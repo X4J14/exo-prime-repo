@@ -1,0 +1,11 @@
+untrusted comment: verify with prime-repo-key.pub
+RWR4D8s/solf7f1m+GxbONlKD5qc15m1PQtUznvRWhUaGhE2BHHCN42MFzb4uewOTnYv93tovd+PD13Yc6p+hkGneHCWL+dC1AA=
+b49d9737c502990223bb5fbb4281f4b73181282e data/perltest.pl
+1b52320ce86c26176f5421b885b71e24e71830ce data/perltestdata
+1425493e484e8fc38a48a8a34cfb5ed4d322b631 data/perltestinput
+6db1f2511cc5172130d36ec95e9c95ecc002e7cd data/unicodetestdata
+5cda51d76c5c1f25aeb59a22b688f13d68ebd993 exo.mod
+20e7c5f4fec14ac5eb0b445c032d778724e58663 src/perl-tests.lisp
+91e8a7056ee7d8caef15ca73752fad900d2c6284 src/simple
+10e1862d54e51088d2f138f0f76a23c393d41101 src/tests.lisp
+43eeb109abe3e2180d3e4e3825038357d9fb03e7 src/unicode-tests.lisp

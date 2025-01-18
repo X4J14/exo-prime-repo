@@ -1,0 +1,10 @@
+(
+	:exo-version 1.0
+	:name "Exo prime repository"
+	:repository (
+		:secure t
+		:signatures ((
+			:key "RWR4D8s/solf7bEoPwXvsebrYebN+LLizUhK2BchkMj6PJ4apy7stzjb"
+			:owner "X4J14 Project"))
+	)
+)

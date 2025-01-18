@@ -1,0 +1,4 @@
+untrusted comment: verify with prime-repo-key.pub
+RWR4D8s/solf7XJm1M11PgO5EIveYEQgdn9KPPV0RPexWTR9kJxA1/1g0qyGgNqaWw63yJy9RhxoDDm25Qk60CSnf/WFqzeOPAI=
+1797a8df3de25dd8e3aa9c023dc658bc870dae21 exo.mod
+f8e65a0dcbc9f592693bde5e90614623d0513dd6 src/cl-ppcre-unicode.lisp
