@@ -31,8 +31,6 @@
   (:export :extern #:set-unicode-property-resolver)
   (:of-bundle #:cl-ppcre))
 
-;(in-package :cl-ppcre-unicode)
-
 ;; Copied to cl-ppcre-unicode module.
 #|
 (defun unicode-property-resolver (property-name)

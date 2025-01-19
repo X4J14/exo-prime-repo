@@ -60,8 +60,6 @@
 
 #+xcvb (module (:depends-on ("package")))
 
-;(in-package :trivial-gray-streams)
-
 (defclass fundamental-stream (impl-specific-gray:fundamental-stream) ())
 (defclass fundamental-input-stream
     (fundamental-stream impl-specific-gray:fundamental-input-stream) ())

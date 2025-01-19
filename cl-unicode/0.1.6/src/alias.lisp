@@ -29,8 +29,6 @@
 
 (exo (:of-bundle #:cl-unicode))
 
-;(in-package :cl-unicode)
-
 (defvar *alias-map*
   '(("L" . "Letter")
     ("LC" . "CasedLetter")

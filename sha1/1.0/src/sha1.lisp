@@ -16,7 +16,7 @@
 ;;;; specific language governing permissions and limitations
 ;;;; under the License.
 ;;;;
-;;;; 2025 The X4J14 Project.
+;;;; 2025 "X4J14 Project"
 ;;;; Add sha1-digest-stream, sha1-digest-file.
 
 (exo
@@ -74,6 +74,19 @@
 
 ;;; ----------------------------------------------------
 
+(defun prepare-finish-message (v total-length)
+  ;; append the '1' bit to the end of the message
+  (vector-push-extend #x80 v)
+  ;; make the message congruent to 448 bits (mod 512) in length
+  (do ()
+      ((= (rem (length v) 64) 56))
+    (vector-push-extend #x00 v))
+  ;; append message length as a 64-bit, big-endian value to the message
+  (do ((i 56 (- i 8)))
+      ((minusp i))
+    (vector-push-extend (logand (ash (ash total-length 3) (- i)) #xff) v))
+  v)
+
 (defun digest (seq)
   "Create a SHA-1 digest from an adjustable vector containing the message."
   (let* ((h0 #x67452301)
@@ -81,37 +94,18 @@
          (h2 #x98badcfe)
          (h3 #x10325476)
          (h4 #xc3d2e1f0)
-
          ;; convert the sequence into an adjustable vector
          (v (make-array (length seq)
                         :element-type '(unsigned-byte 8)
                         :initial-contents seq
                         :adjustable t
                         :fill-pointer t))
-
-         ;; message length in bits
-         (m1 (ash (length v) 3))
-
          ;; chunked words
          (w (make-array 80 :initial-element 0)))
-
-    ;; append the '1' bit to the end of the message
-    (vector-push-extend #x80 v)
-
-    ;; make the message congruent to 448 bits (mod 512) in length
-    (do ()
-        ((= (rem (length v) 64) 56))
-      (vector-push-extend #x00 v))
-
-    ;; append message length as a 64-bit, big-endian value to the message
-    (do ((i 56 (- i 8)))
-        ((minusp i))
-      (vector-push-extend (logand (ash m1 (- i)) #xff) v))
-
+    (prepare-finish-message v (length v))
     ;; break the message up into 512-bit chunks
     (do ((chunk 0 (+ chunk 64)))
         ((>= chunk (length v))
-
          ;; produce the final digest
          (hash-digest (logior (ash h0 128)
                               (ash h1 96)
@@ -147,7 +141,6 @@
                      (values #xca62c1d6 (logxor b c d))))
             (let ((x (logand (+ (rotate-word a 5) f e k (aref w i)) #xffffffff)))
               (setf e d d c c (rotate-word b 30) b a a x))))
-
         ;; add this chunk to the hash result
         (setf h0 (logand (+ h0 a) #xffffffff))
         (setf h1 (logand (+ h1 b) #xffffffff))
@@ -157,55 +150,38 @@
 
 ;;; ----------------------------------------------------
 
-(defun prepare-finish-message (v stream-length)
-  ;; append the '1' bit to the end of the message
-  (vector-push-extend #x80 v)
-  ;; make the message congruent to 448 bits (mod 512) in length
-  (do ()
-      ((= (rem (length v) 64) 56))
-    (vector-push-extend #x00 v))
-  ;; append message length as a 64-bit, big-endian value to the message
-  (do ((i 56 (- i 8)))
-      ((minusp i))
-    (vector-push-extend (logand (ash (ash stream-length 3) (- i)) #xff) v))
-  v)
-
 (defun digest-stream (stream &optional (buffer-size *read-stream-buffer-size*))
-  "Create a SHA-1 digest from an stream containing the message."
+  "Create a SHA-1 digest from a stream containing the message."
   (unless (zerop (mod buffer-size 64))
     (error "Buffer size (~d) must be a multiple of 64" buffer-size))
   (unless (equal (stream-element-type stream) '(unsigned-byte 8))
-    (error "Wrong stream element type. (unsigned-byte 8) only allowed"))
+    (error "Wrong stream element type. (unsigned-byte 8) allowed only"))
   (let* ((h0 #x67452301)
          (h1 #xefcdab89)
          (h2 #x98badcfe)
          (h3 #x10325476)
          (h4 #xc3d2e1f0)
-
          ;; convert the sequence into an adjustable vector
          (v (make-array buffer-size
-                        :element-type (stream-element-type stream)
+                        :element-type '(unsigned-byte 8)
                         :adjustable t
                         :fill-pointer t))
          ;; chunked words
          (w (make-array 80 :initial-element 0)))
-
-    (loop for pos = (read-sequence v stream)
-          with read-length = 0
-          with is-finish = nil
-          while t do
+    (loop :for pos = (read-sequence v stream)
+          :with read-length = 0
+          :with is-finish :do
         (setf read-length (+ read-length pos))
         (when (or (not (eq (length v) pos)) (zerop pos))
           (setf is-finish t)
           (setf v (prepare-finish-message
             (make-array pos
-              :element-type (stream-element-type stream)
+              :element-type '(unsigned-byte 8)
               :adjustable t
               :fill-pointer t
-              :initial-contents (if (zerop pos) nil (subseq v 0 pos)))
+              :initial-contents (unless (zerop pos) (subseq v 0 pos)))
             read-length)
           ))
-
         ;; break the message up into 512-bit chunks
         (do ((chunk 0 (+ chunk 64)))
             ((>= chunk (length v)))
@@ -238,7 +214,6 @@
                          (values #xca62c1d6 (logxor b c d))))
                 (let ((x (logand (+ (rotate-word a 5) f e k (aref w i)) #xffffffff)))
                   (setf e d d c c (rotate-word b 30) b a a x))))
-
             ;; add this chunk to the hash result
             (setf h0 (logand (+ h0 a) #xffffffff))
             (setf h1 (logand (+ h1 b) #xffffffff))
@@ -255,7 +230,7 @@
   ))
 
 (defun digest-file (file-path &optional (buffer-size *read-stream-buffer-size*))
-  "Create a SHA-1 digest from an file containing the message."
+  "Create a SHA-1 digest from a file containing the message."
   (with-open-file (stream file-path :element-type '(unsigned-byte 8))
     (digest-stream stream buffer-size)
   ))
@@ -309,23 +284,19 @@
   "Return the HMAC-SHA1 digest for a byte sequence."
   (when (> (length key) 64)
     (setf key (sha1-digest key)))
-
   ;; make sure the key is at least blocksize in length
   (when (< (length key) 64)
     (setf key (replace (make-array 64
                                    :initial-element 0
                                    :element-type '(unsigned-byte 8))
-
                        ;; make sure the key is a byte vector
                        (hash-vector key))))
 
   ;; determine the o-key-pad and i-key-pad
   (let* ((o-key (loop for i across key collect (logxor #x5c i)))
          (i-key (loop for i across key collect (logxor #x36 i)))
-
          ;; digest the i-key and hash of the message
          (l-msg (concatenate 'list i-key (hash-vector message))))
-
     ;; generate the HMAC hash
     (sha1-digest (append o-key (sha1-digest l-msg)))))
 

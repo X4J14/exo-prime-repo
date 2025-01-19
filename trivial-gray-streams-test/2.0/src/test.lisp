@@ -5,8 +5,6 @@
   (:export :intern #:run-tests)
   (:bundle! #:test-framework))
 
-;(in-package :trivial-gray-streams-test)
-
 ;;; assert-invoked - a tool to check that specified method with parameters has
 ;;; been invoked during execution of a code body
 

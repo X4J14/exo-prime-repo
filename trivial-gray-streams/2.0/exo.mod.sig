@@ -1,7 +1,7 @@
 untrusted comment: verify with prime-repo-key.pub
-RWR4D8s/solf7Tw0JpvNZEgPgpxyQtSdQ6yphDVkHzhprdhxF4daMQ+MKVtToh0j+IWydLq3l53yy2XrE3Q7gw/rLjZAw/lJ+wI=
+RWR4D8s/solf7cn9JjvkeRa+WETjcTAsJCCm0autu9vuIF7ZdsnqJLZLRhMpS1kaM5Slb06Abvk48dYFmRXfV/W5pmuCfFod1g0=
 2257848a3a12617034c490950deb8b2347172554 exo.mod
 fcb4fe7e00e8317c4f966e560c803a7f828ed181 info/COPYING
 4e49ce1ef90c7495dc5b577015431d7c9a64023b info/README
 073e36fcb5275626e19e05162f6261fc44289fd7 src/impl-specific-gray.lisp
-6cc393731ea3db66bc7a98fdf80371dc4a927fb9 src/trivial-gray-streams.lisp
+34058c3babf2b495db11e97c29eff3d61afa41d6 src/trivial-gray-streams.lisp

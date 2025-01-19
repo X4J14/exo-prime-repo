@@ -22,15 +22,6 @@
     #:base64-encode
     #:base64-decode))
 
-#|
-(defpackage :base64
-  (:use :cl)
-  (:export
-   #:base64-encode
-   #:base64-decode))
-(in-package :base64)
-|#
-
 ;;; ----------------------------------------------------
 
 (defparameter *base64*

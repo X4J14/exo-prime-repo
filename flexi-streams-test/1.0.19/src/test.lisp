@@ -33,8 +33,6 @@
     #:flexi-streams)
   (:export :intern #:run-all-tests))
 
-;(in-package :flexi-streams-test)
-
 (defmacro with-test-suite ((test-description &key show-progress-p) &body body)
   "Defines a test suite.  Three utilities are available inside of the
 body of the macro: The function FAIL, and the macros CHECK and

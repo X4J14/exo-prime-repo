@@ -2,8 +2,6 @@
 
 (exo (:of-bundle #:test))
 
-;(in-package :trivial-gray-streams-test)
-
 ;;; test framework
 
 #|

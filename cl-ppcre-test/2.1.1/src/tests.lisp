@@ -39,9 +39,7 @@
     #:cl-ppcre-unicode)
   (:export :intern
     #:run-all-tests #:unicode-test)
-  (:bundle :perl-tests :unicode-tests))
-
-;(in-package :cl-ppcre-test)
+  (:bundle #:perl-tests #:unicode-tests))
 
 (defvar *this-file* (load-time-value
                      (or #.*compile-file-pathname* *load-pathname*))

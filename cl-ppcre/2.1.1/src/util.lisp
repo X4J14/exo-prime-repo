@@ -30,27 +30,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#+nil(exo
-  (:import :intern :specials)
-  (:export
-    :intern
-      #:defconstant
-      #:digit-char-p
-      #:with-unique-names
-      #:with-rebinding
-      #:maybe-coerce-to-simple-string
-      #:nsubseq
-      #:complement*
-      #:whitespacep
-      #:word-char-p
-      #:normalize-var-list
-    :extern
-      #:with-rebinding
-      #:string-list-to-simple-string))
-
 (exo (:of-bundle #:cl-ppcre))
-
-;(in-package :cl-ppcre)
 
 (defmacro defconstant (name value &optional doc)
   "Make sure VALUE is evaluated only once \(to appease SBCL)."

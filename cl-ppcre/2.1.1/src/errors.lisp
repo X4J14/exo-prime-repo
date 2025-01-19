@@ -27,19 +27,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#+nil(exo
-  (:import :intern :specials)
-  (:export
-    :intern
-      #:signal-syntax-error #:signal-invocation-error
-      #:signal-syntax-error* #:*syntax-error-string*
-    :extern
-    	#:ppcre-syntax-error #:ppcre-syntax-error-pos
-    	#:ppcre-syntax-error-string))
-
 (exo (:of-bundle #:cl-ppcre))
-
-;(in-package :cl-ppcre)
 
 (defvar *syntax-error-string* nil
   "The string which caused the syntax error.")

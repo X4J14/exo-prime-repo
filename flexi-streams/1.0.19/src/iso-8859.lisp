@@ -27,9 +27,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-(exo (:of-bundle :flexi-streams))
-
-;(in-package :flexi-streams)
+(exo (:of-bundle #:flexi-streams))
 
 ;;; the following code was auto-generated from files which can be
 ;;; found at <ftp://ftp.unicode.org/Public/MAPPINGS/ISO8859/>

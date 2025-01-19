@@ -27,9 +27,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-(exo (:of-bundle :flexi-streams))
-
-;(in-package :flexi-streams)
+(exo (:of-bundle #:flexi-streams))
 
 (defun recover-from-encoding-error (external-format format-control &rest format-args)
   "Helper function used by OCTETS-TO-CHAR-CODE below to deal with

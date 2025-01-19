@@ -29,24 +29,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#+nil(exo
-  (:import :intern
-    ;(:util (:digit-char-p))
-    :specials :util :parser :scanner :errors)
-  (:export
-    :intern #:parse-tree-synonym
-    :extern
-      #:parse-tree-synonym
-      #:scan #:do-scans #:do-matches #:do-register-groups
-      #:all-matches #:create-scanner #:count-matches
-      #:scan-to-strings #:register-groups-bind
-      #:do-matches-as-strings #:all-matches-as-strings
-      #:split #:regex-replace #:regex-replace-all
-      #:quote-meta-chars))
-
 (exo (:of-bundle #:cl-ppcre))
-
-;(in-package :cl-ppcre)
 
 (defvar *look-ahead-for-suffix* t
   "Controls whether scanners will optimistically look ahead for a

@@ -29,45 +29,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#+nil(exo
-  (:export
-    :intern
-      #:*standard-optimize-settings*
-      #:*special-optimize-settings*
-      #:*extended-mode-p*
-      #:*regex-char-code-limit*
-      #:*string*
-      #:*start-pos*
-      #:*real-start-pos*
-      #:*end-pos*
-      #:*reg-starts*
-      #:*regs-maybe-start*
-      #:*reg-ends*
-      #:*end-string-pos*
-      #:*rep-num*
-      #:*zero-length-num*
-      #:*repeat-counters*
-      #:*last-pos-stores*
-      #:*use-bmh-matchers*
-      #:*optimize-char-classes*
-      #:*property-resolver*
-      #:*allow-quoting*
-      #:*allow-named-registers*
-    :extern
-      #:*string*
-      #:*end-pos*
-      #:*standard-optimize-settings*
-      #:*regex-char-code-limit*
-      #:*optimize-char-classes*
-      #:*use-bmh-matchers*
-      #:*property-resolver*
-      #:*allow-quoting*
-      #:*allow-named-registers*
-))
-
 (exo (:of-bundle #:cl-ppcre))
-
-;(in-package :cl-ppcre)
 
 ;;; special variables used to effect declarations
 

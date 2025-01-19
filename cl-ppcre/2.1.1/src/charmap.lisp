@@ -29,14 +29,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#+nil(exo
-  (:import :intern :specials :util)
-  (:export :intern
-    #:in-charmap-p #:create-charmap-from-test-function))
-
 (exo (:of-bundle #:cl-ppcre))
-
-;(in-package :cl-ppcre)
 
 (defstruct (charmap  (:constructor make-charmap%))
   ;; a bit vector mapping char codes to "booleans" (1 for set members,

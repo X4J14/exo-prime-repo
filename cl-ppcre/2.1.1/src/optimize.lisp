@@ -30,15 +30,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#+nil(exo
-  (:export :intern
-    #:flatten #:gather-strings #:compute-min-rest
-    #:end-string #:start-anchored-p)
-  (:of-bundle :regex-class))
-
 (exo (:of-bundle #:cl-ppcre))
-
-;(in-package :cl-ppcre)
 
 (defgeneric flatten (regex)
   (declare #.*standard-optimize-settings*)

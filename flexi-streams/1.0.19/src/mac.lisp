@@ -26,9 +26,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-(exo (:of-bundle :flexi-streams))
-
-;(in-package :flexi-streams)
+(exo (:of-bundle #:flexi-streams))
 
 ;; https://unicode.org/Public/MAPPINGS/VENDORS/APPLE/ROMAN.TXT
 (defconstant +mac-roman-table+

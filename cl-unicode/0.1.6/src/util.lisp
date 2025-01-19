@@ -31,8 +31,6 @@
 
 (defpackage :cl-unicode-names (:use))
 
-;(in-package :cl-unicode)
-
 (defun parse-hex (string)
   "Parses STRING as a hexadecimal number."
   (parse-integer string :radix 16))

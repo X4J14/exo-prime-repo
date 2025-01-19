@@ -31,8 +31,6 @@
   (:export :extern #:combining-class)
   (:of-bundle #:cl-unicode))
 
-;(in-package :cl-unicode)
-
 (defun try-abbreviations (name scripts-to-try)
   "Helper function called by CHARACTER-NAMED when the
 :TRY-ABBREVIATIONS-P keyword argument is true.  Tries to interpret

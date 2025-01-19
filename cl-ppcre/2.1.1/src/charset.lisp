@@ -30,15 +30,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#+nil(exo
-  (:import :intern :specials :util (:util (:defconstant)))
-  (:export :intern
-    #:+probe-depth+ #:in-charset-p #:charset-count
-    #:create-charset-from-test-function))
-
 (exo (:of-bundle #:cl-ppcre))
-
-;(in-package :cl-ppcre)
 
 (defconstant +probe-depth+ 3
   "Maximum number of collisions \(for any element) we accept before we

@@ -29,8 +29,6 @@
 
 (exo (:of-bundle #:cl-unicode))
 
-;(in-package :cl-unicode)
-
 (defun install-one-test (property-symbol test-function)
   (setf (gethash property-symbol *property-tests*)
         test-function

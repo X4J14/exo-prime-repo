@@ -18,9 +18,7 @@
 ;;    http://unicode.org/Public/MAPPINGS/VENDORS/MICSFT/WindowsBestFit/bestfit936.txt
 ;;
 
-(exo (:of-bundle :flexi-streams))
-
-;(in-package :flexi-streams)
+(exo (:of-bundle #:flexi-streams))
 
 (defun make-multibyte-mapper (list)
   (let ((list (sort (copy-list list) #'< :key #'car))

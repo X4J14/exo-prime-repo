@@ -30,14 +30,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#+nil(exo
-  (:export :intern
-    #:create-matcher-aux #:*string*-equal #:*string*=)
-  (:of-bundle :regex-class))
-
 (exo (:of-bundle #:cl-ppcre))
-
-;(in-package :cl-ppcre)
 
 (declaim (inline *string*= *string*-equal))
 (defun *string*= (string2 start1 end1 start2 end2)

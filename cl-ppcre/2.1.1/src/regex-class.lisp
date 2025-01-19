@@ -30,27 +30,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#+nil(exo
-  (:import :intern :specials :util :errors :api :chartest)
-  (:export :intern
-    #:regex
-    #:seq #:elements
-    #:alternation #:choices
-    #:lookahead #:positivep
-    #:lookbehind
-    #:repetition #:min-len #:min-rest #:minimum #:maximum
-    #:register #:standalone #:back-reference
-    #:char-class #:test-function
-    #:str #:case-insensitive-p #:len #:skip #:offset #:start-of-end-string-p
-    #:anchor #:word-boundary
-    #:everything #:single-line-p
-    #:branch #:else-regex #:then-regex #:test
-    #:filter #:void)
-  (:bundle :convert :regex-class-util :optimize :closures :repetition-closures))
-
 (exo (:of-bundle #:cl-ppcre))
-
-;(in-package :cl-ppcre)
 
 (defclass regex ()
   ()

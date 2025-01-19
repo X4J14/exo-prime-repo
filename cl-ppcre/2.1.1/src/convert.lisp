@@ -31,16 +31,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#+nil(exo
-  #+nil(:import :intern
-    ;(:util (:digit-char-p :complement*))
-    :specials :util :parser :api :regex-class :chartest :errors)
-  (:export :intern #:convert)
-  (:of-bundle :regex-class))
-
 (exo (:of-bundle #:cl-ppcre))
-
-;(in-package :cl-ppcre)
 
 ;;; The flags that represent the "ism" modifiers are always kept
 ;;; together in a three-element list. We use the following macros to

@@ -31,8 +31,6 @@
   (:import :extern #:cl-unicode)
   (:export :intern #:run-all-tests))
 
-;(in-package :cl-unicode-test)
-
 (defvar *this-file* (load-time-value
                      (or #.*compile-file-pathname* *load-pathname*))
   "The location of this source file.  Needed to find the data files.")

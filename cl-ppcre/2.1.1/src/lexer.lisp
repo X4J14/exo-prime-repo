@@ -35,17 +35,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#+nil(exo
-  (:import :intern :specials :util :errors)
-  (:export
-    :intern #:make-lexer #:lexer-pos #:lexer-last-pos #:lexer-reg
-            #:next-char #:start-of-subexpr-p
-            #:get-token #:get-quantifier #:try-number
-            #:end-of-string-p #:parse-register-name-aux))
-
 (exo (:of-bundle #:cl-ppcre))
-
-;(in-package :cl-ppcre)
 
 (declaim (inline map-char-to-special-class))
 (defun map-char-to-special-char-class (chr)

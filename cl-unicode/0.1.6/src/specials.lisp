@@ -29,8 +29,6 @@
 
 (exo (:of-bundle #:cl-unicode #:build))
 
-;(in-package :cl-unicode)
-
 (defconstant +code-point-limit+ #x110000
   "The smallest integer which is not a code point in the Unicode codespace.")
 

@@ -29,8 +29,6 @@
 
 (exo (:of-bundle #:cl-unicode))
 
-;(in-package :cl-unicode)
-
 (defconstant +xid-difference+
   ;; the usual mumbo jumbo for SBCL...
   (if (boundp '+xid-difference+)

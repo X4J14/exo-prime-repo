@@ -28,9 +28,7 @@
 ;;; NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-(exo (:of-bundle :flexi-streams))
-
-;(in-package :flexi-streams)
+(exo (:of-bundle #:flexi-streams))
 
 ;; http://unicode.org/Public/MAPPINGS/VENDORS/MISC/KOI8-R.TXT
 (defconstant +koi8-r-table+

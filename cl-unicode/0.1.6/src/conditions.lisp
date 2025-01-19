@@ -29,8 +29,6 @@
 
 (exo (:of-bundle #:cl-unicode))
 
-;(in-package :cl-unicode)
-
 (define-condition unicode-error (error)
   ()
   (:documentation "All errors signalled by CL-UNICODE are of this type."))

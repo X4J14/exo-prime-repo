@@ -63,24 +63,24 @@
 		#:defconstant
 		#:*substitution-char*)
 	(:bundle
-		:mapping
-		:ascii
-		:koi8-r
-		:mac
-		:iso-8859
-		:enc-cn-tbl
-		:code-pages
-		:specials
-		:util
-		:conditions
-		:external-format
-		:length
-		:encode
-		:decode
-		:in-memory
-		:stream
-		#+:lispworks :lw-char-stream
-		:output
-		:input
-		:io
-		:strings))
+		#:mapping
+		#:ascii
+		#:koi8-r
+		#:mac
+		#:iso-8859
+		#:enc-cn-tbl
+		#:code-pages
+		#:specials
+		#:util
+		#:conditions
+		#:external-format
+		#:length
+		#:encode
+		#:decode
+		#:in-memory
+		#:stream
+		#+:lispworks #:lw-char-stream
+		#:output
+		#:input
+		#:io
+		#:strings))

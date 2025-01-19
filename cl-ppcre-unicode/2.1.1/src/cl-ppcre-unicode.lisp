@@ -28,7 +28,7 @@
 ;;; SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ;;; This file contains part of cl-ppcre code.
-;;; (c) 2024 X4J14 Project
+;;; 2024 "X4J14 Project"
 
 (exo
   (:import :extern

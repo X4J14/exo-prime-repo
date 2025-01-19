@@ -29,8 +29,6 @@
 
 (exo (:of-bundle #:tests))
 
-;(in-package :cl-ppcre-test)
-
 (defun unicode-test (mod-path mod-props &key (file-name 
                            (make-pathname :name "../data/unicodetestdata"
                                           :type nil :version nil
