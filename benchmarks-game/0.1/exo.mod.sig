@@ -1,14 +1,14 @@
 untrusted comment: verify with prime-repo-key.pub
-RWR4D8s/solf7Z53isZ3tVxjxzMdSxDzxLf9d4ySDwYYrGSDqreGHRwQdbna0vUJw0aZXsHV0UK+yFF1j0sTiKFqweqRi/XX7gY=
+RWR4D8s/solf7Z0iMXglhX4y4dXFG+oBAUEZmPQY/bYM8iiuGKKlr6zMV8coLaCmeM7MX/BHaYLowxO2xVoLNU+iErzdqOsKKwM=
 6256a93fe3fa5e05f56e6beee44ae5e673c5a555 exo.mod
 b321522c0a11ea020ce28597687cfdbb0fee57e3 info/LICENSE
-d992351727b987e961701e44ce7aa56d0034f4f5 src/benchmarks-game.lisp
+7d476b88ad2d7749f5668d320af59008b4a33766 src/benchmarks-game.lisp
 6d86caa552074b55d06dbc3baecffff65c32374e src/binary-trees-1.lisp
 8c0f54a6d4a3eb458e04b34a3691b88aba8a3083 src/binary-trees-3.lisp
 d54b8ffa40d6ee16dd7b8ffdc42826091efd6037 src/fannkuch-redux-2.lisp
 2658e448dedddb16be2d03f199d14d0c73cd1ce1 src/fannkuch-redux-3.lisp
 477af7a4c08d37aa62291bdfe3985e5a8797bec5 src/fannkuch-redux-4.lisp
-fc078f06d6b1d2611d9401eb1a5e21c2133a9dba src/fannkuch-redux-5.lisp
+be44cc4b3c31b7de60fb22ea48fa6239ca1723b2 src/fannkuch-redux-5.lisp
 c88cadf6457b11fd5f775f4689ca0e4371667eac src/fasta-1.lisp
 2be0ef45352cb02573dff1ba927f42972e398ff8 src/fasta-2.lisp
 f513754addeeb3c14e01953c054eab167378267c src/fasta-3.lisp

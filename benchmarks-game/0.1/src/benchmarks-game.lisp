@@ -54,9 +54,10 @@
 				(fredux-2 #:fannkuch-redux-2)
 				(fredux-3 #:fannkuch-redux-3)
 				(fredux-4 #:fannkuch-redux-4)
-				;; todo: test failed.
-				;; Very strange bug reproduces while running within Exo only.
-				;(fredux-5 #:fannkuch-redux-5)
+				;; todo: sometimes test failed.
+				;; Very strange bug reproduces while running by Exo only.
+				;; But not reproduces always.
+				(fredux-5 #:fannkuch-redux-5)
 			)
 			:value 12
 			:value-type '(integer 1 100)
@@ -139,7 +140,7 @@
 		(make-benchmark
 			:name "Regex redux"
 			:set '(
-				(regred-4 regex-redux-4))
+				(regred-4 #:regex-redux-4))
 			:value 5000000
 			:value-type '(integer 1 1000000000)
 			:prepare-fn #'prepare-fasta

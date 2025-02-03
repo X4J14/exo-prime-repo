@@ -1,4 +1,4 @@
 untrusted comment: verify with prime-repo-key.pub
-RWR4D8s/solf7RFK4qH0YhiPOyH52qh59nsGikpVlGu9DXhfBI25r6XSxf2PKY01OYoArObfErsAGnmK3hni3OlcMS7C63MhUg0=
+RWR4D8s/solf7Z7ZySlKfAwgrlBwBzL91uzdoJioFQXbGuAlIyQIl4cf1yrrNe6/r/s3LFl1qaLQXShKjH+CWoYHxTnFmeqs1QE=
 a87fea9bc08c06fbe6194d2a33831e6cd56843ec exo.mod
-30ac3746c93d611726c60feaa1a44b4c4a64bc62 src/test.lisp
+5de443432af6c04edbf06c0aeb0277a4a0e0fdd9 src/test.lisp

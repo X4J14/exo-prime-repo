@@ -1,11 +1,9 @@
-;#+!!!
 (exo
   (:export :intern #:exo-run #:main))
 
 (defun exo-run (mod-path mod-props n)
   (declare (ignore mod-path mod-props n))
-  ;(main n)
-  )
+  (main n))
 
 ;; The Computer Language Benchmarks Game
 ;; https://salsa.debian.org/benchmarksgame-team/benchmarksgame/
@@ -19,7 +17,6 @@
 (declaim (optimize (speed 3) (safety 0) (space 1) (debug 0)))
 
 (defun fannkuch (n)
-  (format t "--------------!!!! ~s" n)
   (labels
     ((mkperm (n)
       (let* ((params (loop for i from 1 to n collect (gensym)))
@@ -78,10 +75,4 @@
 
 (defun main (&optional (n (parse-integer (or (car (last sb-ext:*posix-argv*))
                                              "12"))))
-  (format t "+++-------------- ~s" n)
-  (fannkuch n)
-)
-
-;(export 'main)
-
-;(main 12)
+  (fannkuch n))
