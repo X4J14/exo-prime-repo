@@ -5,7 +5,7 @@ Exo modules repository
 **;; benchmarks-game module ;;**  
 
 *Requirements*:  
-Depends on tests parameters, but by default requires free ~4Gb disk space and 6Gb RAM.
+Depends on tests parameters, but by default is requires ~4Gb disk space and 6Gb RAM.
 
 *Run parameters:*
 ```lisp

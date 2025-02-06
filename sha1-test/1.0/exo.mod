@@ -14,4 +14,8 @@
 			:key "RWR4D8s/solf7bEoPwXvsebrYebN+LLizUhK2BchkMj6PJ4apy7stzjb"
 		)
 	)
+	:about (
+		:author "X4J14 Project"
+		:license "MIT-0"
+	)
 )

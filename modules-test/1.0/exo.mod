@@ -14,9 +14,14 @@
 			:cl-ppcre-test "2.1.1"
 			:sha1-test "1.0"
 			:base64-test "1.0"
+			:alexandria "1.0.1"
 		)
 		:signature (
 			:key "RWR4D8s/solf7bEoPwXvsebrYebN+LLizUhK2BchkMj6PJ4apy7stzjb"
 		)
+	)
+	:about (
+		:author "X4J14 Project"
+		:license "MIT-0"
 	)
 )

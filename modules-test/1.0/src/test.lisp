@@ -15,4 +15,5 @@
 	(exo:run (:cl-ppcre-test "2.1.1") :run-unicode)
 
 	(exo:run (:sha1-test "1.0"))
-	(exo:run (:base64-test "1.0")))
+	(exo:run (:base64-test "1.0"))
+	(exo:run (:alexandria-test "1.0.1")))

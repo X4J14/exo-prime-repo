@@ -1,4 +1,5 @@
 untrusted comment: verify with prime-repo-key.pub
-RWR4D8s/solf7UaFgRRms3e2WHidJF+dcFOiS/eBAaAhD/mmvkKUkrYqiZ7Ob8nr2u5Lnx+8Z3apC9ZKukyLcXfqcnOVJZ/WPQg=
-1797a8df3de25dd8e3aa9c023dc658bc870dae21 exo.mod
+RWR4D8s/solf7e3lw7Jsyi+RtzKfFbvigSyLRg3oVPKcuj6pJsT0Srt1lweMHjmClL8P621rQrwX8nZ4QmPgd3Cx5VQuGC/JRgo=
+6c84f9ca0128f1b2446ac4cf7dc39d6e648863bf exo.mod
+57f24c1692286a444a065cba23e14fc4238f6de8 info/LICENSE
 3a31810b2c0128c05523d841caec620f12353b5c src/cl-ppcre-unicode.lisp

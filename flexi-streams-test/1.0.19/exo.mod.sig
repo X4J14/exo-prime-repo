@@ -1,5 +1,5 @@
 untrusted comment: verify with prime-repo-key.pub
-RWR4D8s/solf7eT1N8U/rIUNKFV395j5yfGr92hoQ6NB5EWtWoqjcDqyhjt5gVMy6UZoap0N9VcJVAERQFQZVgKd8ZzPerC8Bwg=
+RWR4D8s/solf7WnOjBWz1mt44JOR68soQDO/UpXlkWIMGM/7ml8S5RlYlPeVQE+3Gu+MmhwtF8GS7DJKd5LmqDJZA4SBMuCafwE=
 4017a497dbaffa2f52ab925125336fd1aff36c92 data/hebrew_latin8_cr.txt
 06d86d8aee66f3846a0dd11422af0ae7aed15383 data/hebrew_latin8_crlf.txt
 bcc4c778821ec288a64841a792a209f0c638fb58 data/hebrew_latin8_lf.txt
@@ -51,5 +51,6 @@ d475c080872bed504ce7fa36de2907953746e157 data/unicode_demo_utf8_crlf.txt
 714b47567f97057ab2b6d2f9ecd1092aabecab4e data/xjt_gbk_cr.txt
 1edcce4e65c1298489acb11b3d0d7e9b34337b32 data/xjt_gbk_crlf.txt
 146f00670778eca230681f0803ebef624eccc030 data/xjt_gbk_lf.txt
-28da208020ec50de9e919b5fc38602f32693ef35 exo.mod
+1ce16fde1e5e3ff213401a62e2ec787218717a72 exo.mod
+9f4eba92409903cc5113fb9cdf30cf6251e18f8a info/README
 6d850b7c016eeea6f8209c1a63e8520fb612ee64 src/test.lisp

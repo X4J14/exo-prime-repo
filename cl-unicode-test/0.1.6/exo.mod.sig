@@ -1,8 +1,8 @@
 untrusted comment: verify with prime-repo-key.pub
-RWR4D8s/solf7Qv87uCzhxSWytuMbkDkOjKp6KxP+D/xuQk+zXAnBlP8mkq5rkVzdx3UMR3d/xmzTnUdCySXIgGnzctnhBG4eAQ=
+RWR4D8s/solf7Wj/IhAU7jsPEykl5yy8p0ugQy33YAPIjW7xwhKcfmTy0Y5YnucSkQGYXp3ifZwMY5//Xc/kCVYl2s5b/gfbnAU=
 f0d351bd7137f5a337ee03590d204e2bb9ba3a04 data/derived-properties
 6511faa60b03cf9a9ecaf8b395fd8b694b8d31cc data/normalization-forms
 595b28727ecd998f66959ab8daf48be34cb2dd09 data/properties
-f3f491836f92ddd8f424db3621e12696a410b566 exo.mod
+c97665d42af3a909747541162b743de50488361c exo.mod
 98bffabd54e10b2a34ee8c116691722cca822786 src/simple
 5685f6aa6dfa6fd20e458cc9c79413d9107ae80a src/tests.lisp

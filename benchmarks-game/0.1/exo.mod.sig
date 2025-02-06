@@ -1,6 +1,6 @@
 untrusted comment: verify with prime-repo-key.pub
-RWR4D8s/solf7Z0iMXglhX4y4dXFG+oBAUEZmPQY/bYM8iiuGKKlr6zMV8coLaCmeM7MX/BHaYLowxO2xVoLNU+iErzdqOsKKwM=
-6256a93fe3fa5e05f56e6beee44ae5e673c5a555 exo.mod
+RWR4D8s/solf7T9BGtwbSZncK6e/hZmjO7SdkyKgXtATYPqbgN/5UJwzF74FfDzlAg1CTCBUWfuMkDsPwD6ssDmBcFqD89j6Pg4=
+df846d5b81957313b9942d2406f3b601614531e2 exo.mod
 b321522c0a11ea020ce28597687cfdbb0fee57e3 info/LICENSE
 7d476b88ad2d7749f5668d320af59008b4a33766 src/benchmarks-game.lisp
 6d86caa552074b55d06dbc3baecffff65c32374e src/binary-trees-1.lisp

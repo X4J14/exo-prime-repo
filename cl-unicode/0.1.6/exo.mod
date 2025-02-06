@@ -14,5 +14,9 @@
 		:signature (
 			:key "RWR4D8s/solf7bEoPwXvsebrYebN+LLizUhK2BchkMj6PJ4apy7stzjb"
 		)
-	)	
+	)
+	:about (
+		:author "Dr. Edi Weitz"
+		:license "BSD-2-Clause"
+	)
 )

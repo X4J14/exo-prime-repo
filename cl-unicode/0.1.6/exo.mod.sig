@@ -1,5 +1,5 @@
 untrusted comment: verify with prime-repo-key.pub
-RWR4D8s/solf7cM5E/lkzAnr3XevfdDI2PZHxwMxKgnQfG1DPe5Qyzy06ZDE0Hm7F9V47SBpwi1RQI1BMbUVf0ti9sBiO5lfiQ0=
+RWR4D8s/solf7drjUPEZJOZFlC9EwE4jpzhnBt+uyk/Dd1cuEA/hpFoqF6W9O80UTND/GksscVGVlkD54z3NylGD32obIigClwI=
 34e42ae8dc3046902c080f05b36768c0af1302da data/BidiMirroring.txt
 56877db10f3936ca4e5e58dc2bdbcfa263f7e10d data/Blocks.txt
 033788b253f78b7b8608e1feb4d2116682f560ae data/CaseFolding.txt
@@ -18,7 +18,7 @@ e22f967bbab8f2477a43533a334e21ebc0728eda data/UnicodeData.txt
 5995088466050257796561e223dc02cb6e244afc data/idna/IdnaMappingTable.txt
 28c5b64e0e9936ece5ba06b27e5ad86df939d34f data/idna/IdnaTestV2.txt
 64aae244b06ad8cf41d6a5d31b8204c1a1d1728e data/idna/ReadMe.txt
-1cbe9417ea257ba1afdb250fe48cb0c1623850b2 exo.mod
+912e69d65d4259bd1c3300af50a8ddda79cb711b exo.mod
 559d7974ef38e85ee6e43d356377da1863fbe9c5 info/CHANGELOG
 0181fa6834e37b26400608321a31f9e375afffcc info/LICENSE
 821e51c6804e560f47a92eb6269715a2085fc010 info/docs/index.html
@@ -32,6 +32,9 @@ be9f003ed7435dba57d610c4e03b2bf9676022ce src/build/dump.lisp
 dd15c02a02b19768f19ccdbb4510324114faf65f src/cl-unicode.lisp
 f16a980381060adf59954f461953be5dd980b081 src/conditions.lisp
 17455864c717928bf360b3d601432a384e9e7a03 src/derived.lisp
+d7321949caa13e9cd65f57ba6c843ec4d40aaaab src/hash-tables.lisp
+b410555521f94de933c8193def80b51cc53ae50c src/lists.lisp
+fed2c5f54fd929934ea8d6a2a4ccf8a5f5b48a94 src/methods.lisp
 f1d7c91884e93f3e9dc1da1f581874abeac96d47 src/specials.lisp
 503da6a4ecce9a6ee84655998dd7c746b0b3d5cc src/test-functions.lisp
 f0d351bd7137f5a337ee03590d204e2bb9ba3a04 src/test/derived-properties

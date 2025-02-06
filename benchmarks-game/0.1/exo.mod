@@ -19,4 +19,7 @@
 			:key "RWR4D8s/solf7bEoPwXvsebrYebN+LLizUhK2BchkMj6PJ4apy7stzjb"
 		)
 	)
+	:about (
+		:license "Revised BSD. See info/LICENSE"
+	)
 )

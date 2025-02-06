@@ -1,4 +1,4 @@
-;; This module is *excessive* due to the cl-unicode module has tests too.
+;; This module is *excessive* due to the  module has tests too.
 ;; The cl-unicode generates some data files (by :run-build) for tests also.
 ;; So, a good idea to separate test code from the main module, but it is unsuitable in this case.
 (
@@ -15,5 +15,9 @@
 		:signature (
 			:key "RWR4D8s/solf7bEoPwXvsebrYebN+LLizUhK2BchkMj6PJ4apy7stzjb"
 		)
+	)
+	:about (
+		:author "Dr. Edi Weitz"
+		:license "BSD-2-Clause"
 	)
 )

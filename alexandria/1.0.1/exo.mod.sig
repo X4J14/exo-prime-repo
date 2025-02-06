@@ -1,0 +1,35 @@
+untrusted comment: verify with prime-repo-key.pub
+RWR4D8s/solf7abCI9Si8Fd8OjnmValdn00Q3GDewEnxnCmi6P7Q9xHwCYQcHkdmiaOxxKSkzwtpCRwKSxykwI1abLETrcIByQM=
+02474e9740b4bc740b1e0be28aafdfb1a3a525ca exo.mod
+b550ea50324863f12ac6eecffdcc9db046c040d2 info/AUTHORS
+b5140fbb249139c569b408ca8495e14de8a50e0a info/LICENCE
+6f35d2cd72aa339366fa19a23e4dce52765c8bc5 info/Makefile
+8255e8963a36c26b02ca79d362a8454bf9576f8c info/README
+466d3734d5a0c9ffa5f9a4080f3f58aa379bbd7e info/alexandria.asd
+04b3fe27992848fdd772e94df1d9ba798cd52fb9 info/alexandria.texinfo
+e049f78ab3d4a295d1c62273839040689996642b info/docstrings.lisp
+c88454a23b144ef52dc3dab37d98d33a6a2e471f src/al-1/arrays.lisp
+ec6e53e2d41c546b8bf83c73636110cd0ec1d005 src/al-1/binding.lisp
+6b29dae58473ed2746138cf8e8465a80e962fd44 src/al-1/conditions.lisp
+25268e6785866315ab6baddb608fe3804a9d5ad5 src/al-1/control-flow.lisp
+9dc5edaa5b26a7a724f04eb05f613d99b5817421 src/al-1/definitions.lisp
+6266089d847e7b6d533477756cbe28ce4df3fc4c src/al-1/features.lisp
+a77dbf3cd0a1a570871be36df34223ef8fe52c92 src/al-1/functions.lisp
+fbe3df026b105901d8c452467711840043053e11 src/al-1/hash-tables.lisp
+e938fffc049b34d2cc3553e8f43b27a841747175 src/al-1/io.lisp
+d30396c95fd7ed90b710eb03268fbe96e8787cad src/al-1/lists.lisp
+63e9e6fac605237b4641f9c91b49f230fde2b71c src/al-1/macros.lisp
+1ae4837c8ba5fd3aff5e0182391d42f1acb101cd src/al-1/numbers.lisp
+d8fab65a43222d9f3007c8df065b3ab8caae2779 src/al-1/package.lisp
+660836a8bc7ce728e7a24c0d1a2ada4a10405a78 src/al-1/sequences.lisp
+393264e8d9f9a8c010b43ef1c14aac5c708b88da src/al-1/strings.lisp
+c01d8e6f2e399c19d50ac097d04d22a08d673e7c src/al-1/symbols.lisp
+5068f8597696be7eedbf7799077ad4ce72371cd7 src/al-1/tests.lisp
+77cfd8433165024ba7c00c7adfa9c7bd13a0e81d src/al-1/types.lisp
+103224a43e69a73671b0f6add6b55fa0d749939f src/al-2/arrays.lisp
+91ece057216f23a78839910535c54999b8bcea20 src/al-2/control-flow.lisp
+8a80b183b5319498662587d627cbe87f207f5dd3 src/al-2/lists.lisp
+e9d5c4ae52e30a2a1145f56cc19e1dc7bd96c02e src/al-2/package.lisp
+f24695d147b4a60c9ec13eca12a24ac3b4a7bd5f src/al-2/sequences.lisp
+531a2cd50fc8c7e3dc725436765c4df965767aff src/al-2/tests.lisp
+673a93a0948826e2c34916a00866a08da0e57e21 src/alexandria.lisp

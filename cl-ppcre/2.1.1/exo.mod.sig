@@ -1,6 +1,6 @@
 untrusted comment: verify with prime-repo-key.pub
-RWR4D8s/solf7Qii+At3PkCJicqbqiLqfsARdkKhTcwnH9XQt0k3lM2uR9bApvkkFmwtV5pPIeGQACjW11GYdtAkhnKLHX+02wE=
-08ea3ecca64586cdef27a6054ed7430dbb1001f2 exo.mod
+RWR4D8s/solf7Sn03Tgwlvpzd2WYNxcei0cJSinaJ1dhqWWLi+3JwZORspOIIbXI553PeuYIJ0oF7qD+9tJllB/YM7HMDlDRLwU=
+ceb35bc447825ffdc631a2c39b4a0a4c4ff7e4e2 exo.mod
 fbd8333fe5aa3472519b81a4235e00581b23bc5e info/CHANGELOG
 57f24c1692286a444a065cba23e14fc4238f6de8 info/LICENSE
 f20b767e5ec299c823b42055a55ca1f75c892857 info/README.md
